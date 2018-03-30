@@ -1,10 +1,6 @@
---- 
-- 
+- name: Hello World Sample
   hosts: all
-  name: "Hello World Sample"
-  tasks: 
-    - 
-      debug: 
-        msg: "Hi! Tower is working for chart name {{ chart_name }} & Version {{ version }} ."
-      name: "Hello Message"
-      shell: "echo \"Hi! Tower is working for chart name {{ chart_name }} & Version {{ version }} .\""
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hi! Tower is working for chart name {{ chart_name }} & Version {{ version }} "
