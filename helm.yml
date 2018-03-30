@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
   - name: Execute helm command
-    command: helm 
+    command: helm list
     register: out1
   - debug: var=out1.stdout_lines
   - name: Run ls and output "ls /"
