@@ -1,6 +1,5 @@
 ---
-hosts: all
-tasks:
-- name: Execute helm command
-  hosts: all
-  command: helm 
+- hosts: all
+  tasks:
+  - name: Execute helm command
+    command: helm 
