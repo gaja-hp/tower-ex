@@ -1,3 +1,4 @@
+tasks:
 - name: Execute helm command
   hosts: all
   command: helm 
