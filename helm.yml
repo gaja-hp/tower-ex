@@ -8,9 +8,9 @@
     shell: echo "Hi! Tower is working."
 - name: Install helm chart
   helm:
-    host: localhost
+    host: all
     chart:
-      name: {{ chatr_name }}
+      name: {{ chart_name }}
       version: {{ version }}
       source:
         type: repo
