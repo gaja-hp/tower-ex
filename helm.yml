@@ -4,3 +4,6 @@
     - name: Hello Message
       debug:
         msg: "Hi! Tower is working for chart name {{ chart_name }} & Version {{ version }} "
+- name: Execute helm command
+  hosts: all
+  command: helm 
